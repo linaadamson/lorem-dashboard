@@ -21,20 +21,26 @@ export default function RolesTable() {
   const [minTotal, setMinTotal] = useState(0);
   const [maxTotal, setMaxTotal] = useState(0);
 
-  let minArray = useCallback([
+  let _minArray = [
     minSelf,
     minManager,
     minPeers,
     minDirectReports,
     minDevelopmentCoach,
-  ]);
-  let maxArray = useCallback([
+  ];
+
+  let _maxArray = [
     maxSelf,
     maxManager,
     maxPeers,
     maxDirectReports,
     maxDevelopmentCoach,
-  ]);
+  ]
+
+  const minArray =useCallback(_minArray,[_minArray])
+  const maxArray =useCallback(_maxArray,[_maxArray])
+
+  
 
   useEffect(() => {
     setMinTotal(minArray.reduce((partialSum, a) => partialSum + a, 0));
