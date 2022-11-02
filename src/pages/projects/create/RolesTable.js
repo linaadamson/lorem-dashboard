@@ -5,7 +5,7 @@ import "./RolesTable.css";
 import TableContainer from "./TableContainer";
 
 // IMPORTS
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 export default function RolesTable() {
   const [minSelf, setMinSelf] = useState(0);
@@ -21,20 +21,20 @@ export default function RolesTable() {
   const [minTotal, setMinTotal] = useState(0);
   const [maxTotal, setMaxTotal] = useState(0);
 
-  let minArray = [
+  let minArray = useCallback([
     minSelf,
     minManager,
     minPeers,
     minDirectReports,
     minDevelopmentCoach,
-  ];
-  let maxArray = [
+  ]);
+  let maxArray = useCallback([
     maxSelf,
     maxManager,
     maxPeers,
     maxDirectReports,
     maxDevelopmentCoach,
-  ];
+  ]);
 
   useEffect(() => {
     setMinTotal(minArray.reduce((partialSum, a) => partialSum + a, 0));
