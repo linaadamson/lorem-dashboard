@@ -3,12 +3,12 @@ export default function LeadershipOptions({ text }) {
     <div className="leadership-options">
       <p>{text}</p>
       <span>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="Don't Know">Don't Know</option>
+        <data value="1">1</data>
+        <data value="2">2</data>
+        <data value="3">3</data>
+        <data value="4">4</data>
+        <data value="5">5</data>
+        <data value="Don't Know">Don't Know</data>
       </span>
     </div>
   );

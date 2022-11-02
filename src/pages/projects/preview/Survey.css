@@ -53,23 +53,23 @@
   margin-left: auto;
 }
 
-.survey .leadership-options span option {
+.survey .leadership-options span data {
   padding: 7px 14px;
   border: 1px solid var(--text-color);
   cursor: pointer;
 }
 
-.survey .leadership-options span option:hover {
+.survey .leadership-options span data:hover {
   background-color: var(--btn-color);
   color: white;
 }
 
-.survey .leadership-options span option:nth-child(even) {
+.survey .leadership-options span data:nth-child(even) {
   border-right: none;
   border-left: none;
 }
 
-.survey .leadership-options span option:last-child {
+.survey .leadership-options span data:last-child {
   border-right: 1px solid var(--text-color);
 }
 
