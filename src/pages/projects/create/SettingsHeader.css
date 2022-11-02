@@ -1,0 +1,52 @@
+.settings-header h2 {
+  font-weight: 500;
+  padding: 2.5rem 0 0.5rem;
+}
+
+.settings-header h3 {
+  font-weight: 500;
+  color: var(--highlight-color);
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid rgb(215, 215, 215);
+  width: 80%;
+}
+
+.settings-header .options-container {
+  padding: 2rem 0;
+  display: flex;
+}
+
+.settings-header .options-container div {
+  margin-right: 5rem;
+}
+
+.settings-header .options-container input {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.settings-header .options-container .checked {
+  background-color: var(--highlight-color);
+}
+
+/* MEDIA QUERRIES */
+@media screen and (max-width: 825px) {
+  .settings-header .options-container div {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .settings-header .options-container {
+    flex-direction: column;
+  }
+}

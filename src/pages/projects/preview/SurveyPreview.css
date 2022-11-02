@@ -1,0 +1,27 @@
+.survey-preview{
+    width: 100%;
+}
+
+.survey-preview h2{
+    color: var(--btn-color);
+    width: 90%;
+    margin: 0 0 3rem auto;
+    font-size: 1.7rem;
+}
+
+.survey-preview .band{
+    background-color: var(--highlight-color);
+    padding: 1rem 0;
+}
+
+.survey-preview img{
+    width: 15%;
+    height: auto;
+    margin: 3rem 0 0 3rem;
+}
+
+@media screen and (max-width: 550px) {
+    .survey-preview img{
+        width: 25%;
+    }
+  }

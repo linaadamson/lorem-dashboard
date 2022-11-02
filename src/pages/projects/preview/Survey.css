@@ -1,0 +1,136 @@
+.survey .survey-container {
+  width: 90%;
+  margin: 0.5rem auto 2rem;
+  border: 2px solid rgb(211, 208, 208);
+  border-radius: 30px;
+  color: rgb(124, 124, 124);
+  padding: 3rem 0;
+}
+
+.survey .survey-introduction {
+  padding: 0 3rem;
+}
+.survey .survey-container h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.survey .survey-container h3 span {
+  color: var(--highlight-color);
+}
+
+.survey .survey-container p {
+  font-size: 1.1rem;
+}
+
+.survey .survey-container .text-emphasis {
+  color: var(--btn-color);
+}
+
+.survey .survey-container p span {
+  color: var(--btn-color);
+}
+
+.survey .leadership-section h3 {
+  color: var(--highlight-color);
+  padding: 0 3rem;
+}
+
+.survey .leadership-options span,
+.survey .leadership-options {
+  display: flex;
+  align-items: center;
+  font-style: italic;
+}
+
+.survey .leadership-options {
+  margin-bottom: 2rem;
+  padding: 0 3rem 1rem;
+}
+
+.survey .leadership-options span {
+  margin-left: auto;
+}
+
+.survey .leadership-options span option {
+  padding: 7px 14px;
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+}
+
+.survey .leadership-options span option:hover {
+  background-color: var(--btn-color);
+  color: white;
+}
+
+.survey .leadership-options span option:nth-child(even) {
+  border-right: none;
+  border-left: none;
+}
+
+.survey .leadership-options span option:last-child {
+  border-right: 1px solid var(--text-color);
+}
+
+.survey .leadership-section .grey-background {
+  background-color: rgb(250, 249, 249);
+  padding: 1rem 0 0;
+}
+
+.survey .leadership-section .grey-underline .leadership-options {
+  border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+.survey .leadership-section label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0 3rem;
+  font-style: italic;
+}
+
+.survey .leadership-section label textarea {
+  margin-left: auto;
+  padding: 8px 6px;
+  font-size: 1rem;
+  color: var(--text-color);
+  width: 40%;
+  box-sizing: border-box;
+  border: 2px solid rgb(211, 208, 208);
+}
+
+/* MEDIA QUERRIES */
+@media screen and (max-width: 550px) {
+  .survey .survey-introduction {
+    padding: 0 2rem;
+  }
+
+  .survey .leadership-options {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem 1rem;
+  }
+
+  .survey .leadership-options span {
+    padding-top: 1rem;
+    margin-left: 0;
+  }
+
+  .survey .leadership-section label {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+
+  .survey .leadership-section label span {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .survey .leadership-section label textarea {
+    margin-left: 0;
+    width: 80%;
+  }
+}

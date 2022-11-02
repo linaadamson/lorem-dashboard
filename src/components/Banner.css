@@ -1,0 +1,12 @@
+.banner{
+    background-color: var(--highlight-color);
+    color: white;
+    margin: 0.8rem 0 0.3rem;
+    padding-left: 1rem;
+    border: 0.5px solid #76892f ;
+}
+
+.banner h1{
+    font-size: 1.7rem;
+    font-weight: 500;
+}

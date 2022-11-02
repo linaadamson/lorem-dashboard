@@ -1,0 +1,45 @@
+.projects .projects-container {
+  text-align: center;
+  min-width: 85vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--poppins-family);
+}
+
+.projects .projects-briefcase-img {
+  width: 120px;
+  height: auto;
+  filter: invert(50%);
+}
+
+.projects h2 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.projects p {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.projects a {
+  color: white;
+  background: var(--btn-color);
+  padding: 0.8rem 1rem;
+  border-radius: 30px;
+}
+
+.projects .projects-add-img {
+  vertical-align: bottom;
+  margin-right: 0.4rem;
+}
+
+@media screen and (max-width: 550px) {
+  .projects .projects-container {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,36 @@
+.survey-table {
+  margin: 2rem 0;
+  text-align: center;
+}
+.survey-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--highlight-color);
+}
+
+.survey-table table tr {
+  border-bottom: 1px solid var(--highlight-color);
+}
+
+.survey-table table td:first-child {
+  color: var(--highlight-color);
+  border-right: 1px solid var(--highlight-color);
+}
+
+.survey-table table td,
+.survey-table table th {
+  padding: 8px 0;
+  border: none;
+}
+
+.survey-table table th {
+  padding: 12px 0;
+  background-color: var(--highlight-color);
+  color: white;
+  font-size: 1.1rem;
+}
+
+.survey-table table th:first-child {
+  padding-left: 15px;
+  text-align: left;
+}

@@ -1,0 +1,49 @@
+/* BUTTONS */
+.project-btns {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  border: none;
+  margin: 2rem 0 3rem;
+  border-radius: 18px;
+  font-family: var(--poppins-family);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.next-btn {
+  margin-right: 2rem;
+  background-color: var(--btn-color);
+  color: white;
+  padding: 0.8rem 3rem;
+  border: 1px solid var(--btn-color);
+}
+
+.cancel-btn {
+  border: 1px solid rgb(194, 188, 188);
+  color: var(--text-color);
+  padding: 0.8rem 2.4rem;
+}
+
+
+/* MEDIA QUERRIES */
+@media screen and (max-width: 825px) {
+  .next-btn {
+    padding: 0.6rem 2.8rem;
+   
+  }
+  
+  .cancel-btn {
+    padding: 0.6rem 2.2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .project-btns {
+    width: 100%;
+    justify-content: center;
+  }
+}

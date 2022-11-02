@@ -1,0 +1,9 @@
+.App .container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.App.isShowing {
+  height: 100vh;
+  overflow-y: hidden;
+}
